@@ -10,6 +10,8 @@ const app = express();
 // useMorgan(app);
 
 logger.error('Something went wrong');
+logger.debug('It is debug');
+logger.warn('I warn you to lear NodeJs');
 
 app.get('/', (req, res) => {
   // logger.log(`${req.method} - ${req.url} - ${new Date().toISOString()}`);

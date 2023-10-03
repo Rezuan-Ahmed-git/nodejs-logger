@@ -1,0 +1,4 @@
+2023-10-03 08:19:31 error: 	Something went wrong 
+2023-10-03 08:19:31 debug: 	It is debug 
+2023-10-03 08:19:31 warn: 	I warn you to lear NodeJs 
+2023-10-03 08:19:31 info: 	Server is listening on port 4000 
