@@ -3,11 +3,11 @@ const logger = require('./logger');
 const morgan = require('morgan');
 const uuid = require('uuid');
 
-const useMorgan = require('./useMorgan');
+// const useMorgan = require('./useMorgan');
 
 const app = express();
 
-useMorgan(app);
+// useMorgan(app);
 
 app.get('/', (req, res) => {
   // logger.log(`${req.method} - ${req.url} - ${new Date().toISOString()}`);
@@ -15,5 +15,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(4000, () => {
-  console.log('Server is listening on port 4000');
+  logger.log('info', 'Server is listening on port 4000');
 });
