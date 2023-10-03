@@ -9,6 +9,8 @@ const app = express();
 
 // useMorgan(app);
 
+logger.error('Something went wrong');
+
 app.get('/', (req, res) => {
   // logger.log(`${req.method} - ${req.url} - ${new Date().toISOString()}`);
   res.status(200).json({ message: 'welcome' });
